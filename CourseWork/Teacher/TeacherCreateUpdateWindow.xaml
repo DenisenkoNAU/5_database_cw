@@ -1,0 +1,64 @@
+﻿<Window x:Class="CourseWork.Teacher.TeacherCreateUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork.Teacher"
+        Style="{StaticResource WindowSyle}"
+        Icon="/Assets/Icons/icon.ico"
+        Title="Заклад вищої освіти"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Width="600">
+    <StackPanel Style="{StaticResource StackPanelTabStyle}">
+        <TextBlock
+            Style="{StaticResource TextBlockModalTitleStyle}"
+            x:Name="TextBlockTitle"
+            Text="Title"
+            HorizontalAlignment="Center"/>
+        <StackPanel Margin="0 24 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="Ім'я *"/>
+            <TextBox x:Name="TextBoxFirstName" />
+        </StackPanel>
+        <StackPanel Margin="0 12 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="Прізвище *"/>
+            <TextBox x:Name="TextBoxLastName" />
+        </StackPanel>
+        <StackPanel Margin="0 12 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="По батькові"/>
+            <TextBox x:Name="TextBoxSurName" />
+        </StackPanel>
+        <StackPanel Margin="0 12 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="Телефон"/>
+            <TextBox x:Name="TextBoxPhone" />
+        </StackPanel>
+        <StackPanel Margin="0 12 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="Пошта"/>
+            <TextBox x:Name="TextBoxEmail" />
+        </StackPanel>
+        <StackPanel Margin="0 12 0 0">
+            <TextBlock
+                Style="{StaticResource TextBlockLabelStyle}"
+                Text="Посада"/>
+            <TextBox x:Name="TextBoxPosition" />
+        </StackPanel>
+        <StackPanel Margin="0 24 0 0">
+            <Button
+                x:Name="ButtonAction"
+                Content="Action"
+                HorizontalAlignment="Center"
+                Click="ButtonAction_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

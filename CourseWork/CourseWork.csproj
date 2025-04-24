@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Icons\icon.ico" />
+    <None Remove="Assets\Icons\ic_back.png" />
+    <None Remove="Assets\Icons\ic_delete.png" />
+    <None Remove="Assets\Icons\ic_edit.png" />
+    <None Remove="Assets\Icons\ic_view.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Icons\icon.ico" />
+    <Resource Include="Assets\Icons\ic_back.png" />
+    <Resource Include="Assets\Icons\ic_delete.png" />
+    <Resource Include="Assets\Icons\ic_edit.png" />
+    <Resource Include="Assets\Icons\ic_view.png" />
+  </ItemGroup>
+
+</Project>

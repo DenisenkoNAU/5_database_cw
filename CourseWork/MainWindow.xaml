@@ -1,0 +1,42 @@
+﻿<Window x:Class="CourseWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork"
+        mc:Ignorable="d"
+        Style="{StaticResource WindowSyle}"
+        Icon="/Assets/Icons/icon.ico"
+        Title="Заклад вищої освіти" 
+        Height="600" 
+        Width="1120"
+        MinHeight="360"
+        MinWidth="720">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl>
+            <TabItem Header="Студенти">
+                <Frame Source="Student/StudentPage.xaml" NavigationUIVisibility="Hidden" />
+            </TabItem>
+
+            <TabItem Header="Групи">
+                <Frame Source="Group/GroupPage.xaml" NavigationUIVisibility="Hidden" />
+            </TabItem>
+
+            <TabItem Header="Вчителі">
+                <Frame Source="Teacher/TeacherPage.xaml" NavigationUIVisibility="Hidden" />
+            </TabItem>
+
+            <TabItem Header="Дисципліни">
+                <Frame Source="Discipline/DisciplinePage.xaml" NavigationUIVisibility="Hidden" />
+            </TabItem>
+            
+            <TabItem Header="Спеціальності">
+                <Frame Source="Speciality/SpecialityPage.xaml" NavigationUIVisibility="Hidden" />
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
